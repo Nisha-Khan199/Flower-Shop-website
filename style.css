@@ -1,0 +1,392 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html , body{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(227, 231, 231);
+        scroll-behavior: smooth;
+      
+        
+}
+
+.logo h1{
+    margin-left: 40px;
+    
+}
+
+ 
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background:white;
+    color: rgb(9, 9, 9);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 40px;
+    position: fixed;
+    top: 0;
+
+  
+}
+.navitems ul li{
+   display: inline-block;
+    list-style: none;
+    margin-left: 55px;
+   margin-right: 50px;}
+ 
+.navitems ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+   
+
+}
+.navitems ul li a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #f895b4;
+    transition: all 0.5s;
+   
+}
+
+.navitems ul a:hover::before{
+    width: 100%;
+}
+.navicons i{
+    font-size: 1rem;
+    margin-left: 7px;
+  padding-right: 6px;
+  transition: all 0.5s;
+}
+.navicons i:hover{
+    color: #e7316a;
+    transform: translateY(-8px);
+}
+
+   /* Home*/ 
+   .content{
+    height: 50vw;
+    width: 100%;
+    text-align: center;
+    background: url(bgflower.jpg);
+    padding-top: 16vw;
+    background-size: cover;
+    background-position: center;
+    color: rgb(13, 13, 13);
+   }
+ 
+   .content h1{
+    font-size: 45px;
+    font-weight: 800;
+    word-spacing: 8px;
+
+   }
+   .content h3{
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 4px;
+    margin-top: 5px;
+    color: #e7316a;
+
+   }
+   .content p{
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: 3px;
+    color: #443e3f;
+    margin-top: 15px;
+   }
+   .btn{
+    padding: 10px 36px; 
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    transition: all 0.5s;
+    font-weight: 600;
+   }
+  button:hover{
+    background-color: #e7316a;
+    color: white;
+   
+   }
+  .container{
+  background: white;
+    height: 500px;
+    width: 100%;
+    padding-top: 60px;
+ 
+  }
+   #about{
+    padding:  120px 30px ;
+   
+    
+    background: white;
+    
+   }
+   .aboutus{
+    width: 70%;
+    background-color: #facad8;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 15vw;
+    padding: 10px;
+    margin-bottom: 5vw;
+
+   
+   }
+  
+   .aboutus h1 span {
+    color: #e7316a;
+
+    
+   
+
+   }
+   .leftp{
+    padding-left: 60px;
+   }
+   .leftp p{
+    width: 400px;
+  
+   }
+   .leftp h1{
+    word-spacing: 3px;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 15px;
+   }
+   .rightp{
+    width: 650px;
+    height: 300px;
+ 
+    margin-left: 45px;
+
+   }
+   .hero{
+    display: flex;
+   }
+   .shipsec{
+    display: flex;
+    transition: all 0.5s;
+   
+   
+   }
+   .box{
+    display: flex;
+    background-color: white;
+    width: 220px;
+    height: 60px;
+margin-left: 60px;
+margin-top: 50px;
+    gap:5px;
+    margin-right: 40px;
+    border-radius: 6px;
+margin-bottom: 50px; 
+box-shadow: 0 1rem 2rem black;
+
+ 
+}
+.leftsec i{
+    align-items: center;
+    margin:  20px 0px 0px 20px;
+}
+.rightsec{
+    text-align: center;
+    margin-top: 12px;
+}
+.rightsec p{
+    font-size: 12px;
+    color: rgb(144, 138, 138);
+}
+.rightsec h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+.potc{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    margin-left:  50px ;
+    margin-right:  50px ;
+}
+.potc .pots{
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+    transition: all 0.5s;
+}
+.potc .pots img{
+    height: 80px;
+}
+.potc .pots h1 {
+    color: #030303;
+}
+ .container1 .potc .pots p{
+    text-decoration: line-through;
+}
+.container1{
+    background: white;
+      height: 800px;
+      width: 100%;
+      padding-top: 60px;
+    }
+    .pots div:hover{
+        box-shadow: 0 10px 15px black;
+     
+        transform: translateY(-10px);
+        background: #e7316a;
+        color: rgb(253, 251, 251);
+     
+      }
+      .discount{
+        color: #e7316a;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        margin-right: 14vw;
+      }
+      .shipsec  :hover{
+        transform: translateY(-5px);
+    
+       }
+    .potc .pots img{
+        height: 90px;
+        width: 90px;
+        margin-bottom: 15px;
+    }
+    /* Review*/
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    margin-left:  50px ;
+    margin-right:  50px ;
+}
+.reviews .reviewcon{
+    box-shadow: 0 5px 10px rgb(16, 15, 16);
+    border-radius: 5px;
+    background: white;
+    text-align: center;
+    padding: 30px 20px;
+    transition: all 0.5s;
+}
+.reviews .reviewcon:hover{
+    transform: translateY(-8px);
+}
+
+
+ .profile img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+   
+ }
+ .reviews .profile{
+    display: flex;
+    align-items: center;
+
+ } .reviews .profile .intro{
+    margin-left: 1.2rem;
+ }
+ .reviews .profile .intro h2{
+    font-size: 22px;
+ }
+ .reviews .profile .intro p{
+    font-size: 15px;
+    color: #443e3f;
+ }
+ .rightp video {
+width: 100%;
+height: 100%;
+border: 1.5rem solid #fff;
+border-radius: 1rem;
+box-shadow: 0 .5rem 1 rem black;
+
+ }
+ .rightp{
+    position: relative;
+ }
+ .rightp h3{
+    position: absolute;
+    top: 50%;
+   color: #030303;
+    font-size: 2rem;
+    background: #fff;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    mix-blend-mode: screen;
+ } 
+ .stars i{
+    color: #e7316a;
+
+ }
+ .stars{
+ 
+   font-size: 1.2rem;
+   margin: 10px;
+   text-align: start;
+ 
+ }
+ .shipsec .box .leftsec i{
+    font-size: 1.5rem;
+    text-align: start;
+    margin-right: 0.8rem;
+    color: #e7316a;
+    margin-bottom: 12px;
+ }
+ .contact{
+    display: flex;
+  ;
+    margin-top: 4rem;
+ 
+ }
+ .contact .contactright{
+    margin-left: 10rem;
+   background:#f895b4;
+    box-shadow: 0 1rem 1.2rem black;
+    width: 60%;
+    margin-right: 90px;
+    padding-left: 45px;
+    margin-bottom: 50px;
+ }
+ .contact input{
+    padding: 10px 150px;
+    display: block;
+   
+    border: 2px solid rgb(150, 122, 122);
+    margin-top: 30px;
+
+
+ }
+ .contact .contactleft{
+    margin-left: 6rem;
+    margin-top: 2rem;
+ }
+ .contact textarea{
+    padding: 60px 150px;
+    margin-top: 20px;
+ }
+ .contact button{
+    margin-bottom: 30px;
+ }
+input{
+    font-size: 15px;
+    word-spacing: 2px;
+text-align: start;
+}
